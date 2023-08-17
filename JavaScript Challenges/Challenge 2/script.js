@@ -12,7 +12,7 @@ if (age < 20) {
   console.log (expression3);
   const expression4 = !expression3;
   console.log (expression4);
-  const age1 = 10;
+  const age1 = 15;
 const hasDriverLicense = false;
 const hasCar = false;
 const canDrive = false;
@@ -34,3 +34,22 @@ if (age1 >= 22 && hasDriverLicense == true && hasCar == false) {
     let needDriver = true;
     console.log("need driver")
    }
+ let role = "admin"
+ switch (role) {
+    case "admin":
+        text = "You have read and write access for the data";
+
+      break;
+      case "user":
+        text = "You have only read access for the data";
+
+      break;
+    case "guest": 
+    text = "You have no access for the data";
+
+      break;
+      default:
+        text = "User role is not recoginized";
+    
+  }
+  console.log(text)
