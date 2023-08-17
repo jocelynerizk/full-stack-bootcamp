@@ -42,6 +42,7 @@ console.log(result);
 let result1 = ` ${strvar1} ${strvar2} `; // using $ operator with curly braces
 console.log(result1);
 
-
+if (age > 18) text1 = "young ";
+console.log(text1);
 
 ;
