@@ -25,3 +25,20 @@ const str4 ="null";
 console.log(str4)
 const str5="undefined";
 console.log(str5);
+let mytext1 = 'This string uses single quotes.';
+console.log(mytext1);
+let mytext2 = "This string uses double quotes.";
+console.log(mytext2)
+let mytext3 = `This string uses backticks.`;
+console.log(mytext3);
+const backtick = `This is my text using backticks ${age} times`;
+console.log(backtick);
+const backtick1 = `This is my text using backticks ${age+dob} `;
+console.log(backtick1);
+
+
+
+
+
+
+;
