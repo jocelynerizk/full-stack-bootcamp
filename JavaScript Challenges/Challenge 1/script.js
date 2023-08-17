@@ -35,9 +35,12 @@ const backtick = `This is my text using backticks ${age} times`;
 console.log(backtick);
 const backtick1 = `This is my text using backticks ${age+dob} `;
 console.log(backtick1);
-
-
-
+let strvar1 = "welcome";
+let strvar2 = "To Lebanon";
+let result = strvar1 + strvar2 ; // using + operator;
+console.log(result);
+let result1 = ` ${strvar1} ${strvar2} `; // using $ operator with curly braces
+console.log(result1);
 
 
 
