@@ -39,10 +39,15 @@ let strvar1 = "welcome";
 let strvar2 = "To Lebanon";
 let result = strvar1 + strvar2 ; // using + operator;
 console.log(result);
-let result1 = ` ${strvar1} ${strvar2} `; // using $ operator with curly braces
-console.log(result1);
+let resultf1 = ` ${strvar1} ${strvar2} `; // using $ operator with curly braces
+console.log(resultf1);
 
 if (age > 18) text1 = "young ";
 console.log(text1);
-
+let result0 = 5 + 3 * 2;
+console.log(result0);
+let result1 = 10 / 2 + 3;
+console.log(result1);
+let result2 = 10 / (2 + 3);
+console.log(result2);
 ;
