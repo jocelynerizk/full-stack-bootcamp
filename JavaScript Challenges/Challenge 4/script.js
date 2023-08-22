@@ -18,3 +18,13 @@ console.log(additionalInfo)
 
 let fullInfo = Object.assign(personalInfo, additionalInfo);
 console.log(fullInfo);
+
+var firstNum = fiveNumbers[0];
+var secondNum = fiveNumbers[1];
+var thirdNum = fiveNumbers[2];
+console.log(firstNum);
+console.log(secondNum);
+console.log(thirdNum);
+var { Name , LOCATION , NATIONALITY } = personalInfo;
+
+console.log( Name , LOCATION , NATIONALITY);
