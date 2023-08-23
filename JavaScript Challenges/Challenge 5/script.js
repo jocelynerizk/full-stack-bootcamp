@@ -28,3 +28,47 @@ var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
 for (var i = 0; i < headings.length; i++) {
     headings[i].style.fontStyle = "italic";
 }
+
+let x= document.querySelector("body")
+var button = document.createElement("button");
+button.textContent = "Hover Me";
+button.className = "color-change-button";
+x.appendChild(button);
+
+
+button.style.padding = "10px 20px";
+button.style.backgroundColor = "red";
+button.style.color = "black";
+button.style.border = "none";
+button.style.cursor = "pointer";
+
+button.addEventListener("mouseover", function() {
+    button.style.backgroundColor = "orange"; 
+});
+
+
+button.addEventListener("mouseout", function() {
+    button.style.backgroundColor = "blue"; 
+});
+
+var originalDiv = document.getElementById("original"); 
+
+originalDiv.addEventListener("click", function(event) {
+    var targetButton = event.target;
+        var loggText = targetButton.textContent;
+        console.log("Clicked item", loggText);
+
+});
+
+
+
+var form = document.getElementById("myForm"); 
+
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    console.log("Name:", name);
+    console.log("Email:", email);
+});
