@@ -72,3 +72,9 @@ form.addEventListener("submit", function(event) {
     console.log("Name:", name);
     console.log("Email:", email);
 });
+var originalDiv = document.getElementById("original"); 
+var clonedDiv = originalDiv.cloneNode(true);
+document.body.appendChild(clonedDiv);
+var clonedp = clonedDiv.querySelector("p");
+clonedp.textContent = "Cloned";
+
