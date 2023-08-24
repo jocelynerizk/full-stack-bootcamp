@@ -101,9 +101,20 @@ button.addEventListener("click", function() {
   form.appendChild(document.createElement("br"));
   form.appendChild(document.createElement("br"));
   form.appendChild(submitButton);
- 
-  form.addEventListener("submit", function(event) {   
-     event.preventDefault();  });
+
+  submitButton.addEventListener("click", function() {
+    var password = passwordInput.value;
+    var confirmPassword = confirmPasswordInput.value;
+
+    if (password === confirmPassword) {
+      errorMessage.style.display = "none";
+      // Perform form submission or further actions here
+    } else {
+      errorMessage.style.display = "block";
+    }
+  });
+  
+
      function displaySuccess() {
         var successMessage = document.createElement("p");
         successMessage.className = "success";
@@ -111,4 +122,4 @@ button.addEventListener("click", function() {
         form.appendChild(successMessage);
       }
 
-  
+    
