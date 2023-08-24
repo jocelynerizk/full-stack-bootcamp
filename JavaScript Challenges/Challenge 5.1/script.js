@@ -47,3 +47,68 @@ button.addEventListener("click", function() {
       heading.style.fontSize = (fontSize + 4) + "px";
     }
   });
+  
+
+  var form = document.createElement("form");
+  x.appendChild(form);
+  var fullNameLabel = document.createElement("label");
+  fullNameLabel.textContent = "Full Name:";
+  var fullNameInput = document.createElement("input");
+  fullNameInput.type = "text";
+  fullNameInput.name = "full-name";
+  
+  
+  var emailLabel = document.createElement("label");
+  emailLabel.textContent = "Email Address:";
+  var emailInput = document.createElement("input");
+  emailInput.type = "email";
+  emailInput.name = "email";
+  
+  
+  var passwordLabel = document.createElement("label");
+  passwordLabel.textContent = "Password:";
+  var passwordInput = document.createElement("input");
+  passwordInput.type = "password";
+  passwordInput.name = "password";
+  
+  
+  var confirmPasswordLabel = document.createElement("label");
+  confirmPasswordLabel.textContent = "Confirm Password:";
+  var confirmPasswordInput = document.createElement("input");
+  confirmPasswordInput.type = "password";
+  confirmPasswordInput.name = "confirm-password";
+  
+  
+  var submitButton = document.createElement("input");
+  submitButton.type = "submit";
+  submitButton.value = "Submit";
+  
+  
+  form.appendChild(fullNameLabel);
+  form.appendChild(fullNameInput);
+  form.appendChild(document.createElement("br"));
+  form.appendChild(document.createElement("br"));
+  form.appendChild(emailLabel);
+  form.appendChild(emailInput);
+  form.appendChild(document.createElement("br"));
+  form.appendChild(document.createElement("br"));
+  form.appendChild(passwordLabel);
+  form.appendChild(passwordInput);
+  form.appendChild(document.createElement("br"));
+  form.appendChild(document.createElement("br"));
+  form.appendChild(confirmPasswordLabel);
+  form.appendChild(confirmPasswordInput);
+  form.appendChild(document.createElement("br"));
+  form.appendChild(document.createElement("br"));
+  form.appendChild(submitButton);
+ 
+  form.addEventListener("submit", function(event) {   
+     event.preventDefault();  });
+     function displaySuccess() {
+        var successMessage = document.createElement("p");
+        successMessage.className = "success";
+        successMessage.textContent = "Form submitted successfully!";
+        form.appendChild(successMessage);
+      }
+
+  
