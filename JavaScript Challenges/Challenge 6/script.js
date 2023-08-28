@@ -12,3 +12,29 @@ function updateClock() {
 }
 
 setInterval(updateClock, 1000); // Update every second
+const delayedPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Promise resolved!");
+    }, 2000);
+});
+
+delayedPromise.then((message) => {
+    console.log(message);
+});
+const initialPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Promise resolved!");
+    }, 2000);
+});
+
+const chainedPromise = initialPromise.then((message) => {
+    console.log(message);
+    return "Chained message!";
+});
+
+
+chainedPromise.then((chainedMessage) => {
+    console.log(chainedMessage);
+});
+
+
